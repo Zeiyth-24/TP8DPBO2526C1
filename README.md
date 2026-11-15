@@ -6,13 +6,13 @@
 
 ---
 
-## Janji Kejujuran
+## Janji
 
 Saya **Zufar Ahmad Maulidy** dengan **NIM 2400285** mengerjakan Tugas Praktikum 8 dalam mata kuliah Desain dan Pemrograman Berorientasi Objek untuk keberkahan-Nya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin.
 
 ---
 
-## Deskripsi Aplikasi & Konteks Tugas
+## Deskripsi Aplikasi dan Konteks Tugas
 
 Aplikasi ini merupakan hasil transformasi dan pengembangan dari kode awal CRUD prosedural menjadi aplikasi berbasis **Model–View–Controller (MVC)** menggunakan PHP Native dan basis data MySQL/MariaDB. Sistem ini dirancang untuk mengelola penugasan pengajaran akademik di lingkungan Program Studi Ilmu Komputer UPI.
 
@@ -56,14 +56,14 @@ erDiagram
     }
 ```
 
-### Konsekuensi Integritas Relasi (CASCADE)
+### Integritas Relasi (CASCADE)
 - `ON DELETE CASCADE`: Jika data dosen atau mata kuliah dihapus, seluruh data penugasan pengampu terkait pada tabel `teaching_assignments` akan otomatis terhapus untuk menjaga integritas data.
 - Dialog konfirmasi interaktif di antarmuka web selalu mengingatkan pengguna sebelum penghapusan data induk dilakukan.
 - `UNIQUE KEY unique_assignment (lecturer_id, course_id, semester, academic_year)`: Mencegah penugasan duplikat untuk dosen, mata kuliah, semester, dan tahun akademik yang sama.
 
 ---
 
-## Struktur Direktori Proyek
+## Struktur Direktori
 
 Proyek ini telah ditata sesuai spesifikasi pengumpulan tugas:
 
@@ -116,7 +116,7 @@ TP8/
 
 ---
 
-## Desain & Arsitektur MVC
+## Desain dan Arsitektur MVC
 
 Aplikasi menerapkan pemisahan tugas (*Separation of Concerns*) secara ketat:
 - **Model**: Mengelola interaksi basis data menggunakan `mysqli` prepared statements untuk seluruh masukan. Query SQL tidak pernah ditulis di controller atau view.
@@ -140,12 +140,12 @@ Aplikasi menerapkan pemisahan tugas (*Separation of Concerns*) secara ketat:
 
 ---
 
-### Demonstrasi Alur CRUD (Screen Recording GIF)
+### Demonstrasi Alur CRUD Berupa Screen Recording GIF
 ![Demonstrasi Alur Navigasi dan CRUD SIAKAD](Dokumentasi/demo-alur-siakad.gif)
 
 ---
 
-### Tangkapan Layar (Screenshots)
+### Screenshots
 
 #### A. Entitas Dosen (`lecturers`)
 | Daftar Dosen | Form Tambah Dosen |
